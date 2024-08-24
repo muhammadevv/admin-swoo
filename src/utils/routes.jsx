@@ -1,4 +1,5 @@
 import { Buildings, Clients, Dashboard, Floor, Locations, Logout, } from "../pages";
+import Home from "../pages/home";
 
 export const routes =[
   {
@@ -35,6 +36,11 @@ export const routes =[
     id: 6,
     path: '/floor',
     component: <Floor/>
+  },
+  {
+    id: 7,
+    path: '/home',
+    component: <Home/>
   },
 
 ]

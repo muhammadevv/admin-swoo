@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Building2, LayoutDashboard, MapPinHouse, Users } from "lucide-react";
+import { Building2, House, LayoutDashboard, MapPinHouse, Users } from "lucide-react";
 import FloorPlan from "../assets/icons/FloorPlan";
 export const menuItems = [
   {
@@ -26,5 +26,10 @@ export const menuItems = [
     key: '/floor',
     icon: <FloorPlan />,
     label: <Link to={'/floor'}>Floor</Link>
+  },
+  {
+    key: '/home',
+    icon: <House size={16} strokeWidth={1.5} />,
+    label: <Link to={'/home'}>Home</Link>
   }
 ]

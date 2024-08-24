@@ -42,42 +42,42 @@ export const bannerDelete = (id) => `/banner/${id}`
 
 
 //Buildings
-export const buildingsList = '/buildings/admin_ceo'
-export const buildingsGet = (item) => `/buildings/admin_ceo/${item.username}`;
-export const buildingsPost = (item) => `/buildings/admin_ceo/create/${item.username}`;
-export const buildingsPatch = (item) => `/buildings/admin_ceo/${item.id}/update/${item.username}`;
-export const buildingsDelete = (item) => `/buildings/admin_ceo/${item.id}/delete/${item.username}`;
+export const buildingsList = '/buildings'
+export const buildingsPost = '/buildings';
+export const buildingsPut = (id) => `/buildings/${id}`;
+export const buildingsPatch = (id) => `/buildings/${id}`;
+export const buildingsDelete = (id) => `/buildings/${id}`;
 
 //Clients
-export const clientsList = `/clients/admin_ceo`;
-export const clientsGet = (item) => `/clients/${item.username}`;
-export const clientsPost = (item) => `/clients/create/${item.username}`;
-export const clientsPatch = (item) => `/clients/${item.id}/update/${item.username}`;
-export const clientsDelete = (item) => `/clients/${item.id}/delete/${item.username}`;
+export const clientsList = '/clients';
+export const clientsPost = '/clients';
+export const clientsPut = (id) => `/clients/${id}`;
+export const clientsPatch = (id) => `/clients/${id}`;
+export const clientsDelete = (id) => `/clients/${id}`;
 
 //Floor  
-export const floorList = `/floor/admin_ceo`;
-export const floorGet = (item) => `/floor/${item.username}`;
-export const floorPost = (item) => `/floor/create/${item.username}`;
-export const floorPatch = (item) => `/floor/${item.id}/update/${item.username}`;
-export const floorDelete = (item) => `/floor/${item.id}/delete/${item.username}`;
+export const floorList = `/floor`;
+export const floorPost =  '/floor';
+export const floorPut = (id) => `/floor/${id}`;
+export const floorPatch = (id) => `/floor/${id}`;
+export const floorDelete = (id) => `/floor/${id}`;
 
 // Home 
-export const homeList = `/home/admin_ceo`;
-export const homeGet = (item) => `/home/${item.username}`;
-export const homePost = (item) => `/home/create/${item.username}`;
-export const homePatch = (item) => `/home/${item.id}/update/${item.username}`;
-export const homeDelete = (item) => `/home/${item.id}/delete/${item.username}`;
+export const homeList = '/home';
+export const homePost = '/home';
+export const homePut = (id) => `/home/${id}`;
+export const homePatch = (id) => `/home/${id}`;
+export const homeDelete = (id) => `/home/${id}`;
 
 // Locations
-export const locationsList = '/locations/admin_ceo';
-export const locationsGet = (item) => `/locations/`;
-export const locationsPost = (item) => `/locations/create/${item.username}`;
-export const locationsPatch = (item) => `/locations/${item.id}/update/${item.username}`;
-export const locationsDelete = (item) => `/locations/${item.id}/delete/${item.username}`;
+export const locationsList = '/locations';
+export const locationsPost = `/locations`;
+export const locationsPut = (id) => `/locations/${id}`;
+export const locationsPatch = (id) => `/locations/${id}`;
+export const locationsDelete = (id) => `/locations/${id}`;
 
 //Filter
-export const filter = (item) => `/filter/${item}`;
+export const filter = (id) => `/filter/${id}`;
 
 //Month-minus
 export const monthMinus = (id) => `/month-minus/${id}`

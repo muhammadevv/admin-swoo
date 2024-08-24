@@ -14,7 +14,7 @@ function useDeleteModal() {
       okType: 'danger',
       canclText: 'No',
       async onOk() {
-        await deleteRequest.request({ url: deleteUrl.id })
+        await deleteRequest.request({ url: deleteUrl })
         reload()
       },
       onCancel() {
