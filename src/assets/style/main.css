@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 html,
@@ -9,12 +9,19 @@ body,
 .wrapper {
   width: 100%;
   height: 100%;
-  text-transform:capitalize;
+  text-transform: capitalize;
+
 }
 
-.ant-layout {
-  height: 100%;
+/* ant-layout ant-layout-has-sider  */
+
+.ant-layout-has-sider {
+  min-height: 100%;
 }
+
+/* .ant-layout {
+  height: 100%;
+} */
 
 .main-content {
   margin: 24px 16px;

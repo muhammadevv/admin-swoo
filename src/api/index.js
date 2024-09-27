@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const Axios = axios.create({
-  baseURL: 'https://4d40d9285336e5f2.mokky.dev'
+  baseURL: 'https://blogsites.pythonanywhere.com/api'
 })
-
 export default Axios
 
 

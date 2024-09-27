@@ -15,7 +15,7 @@ function Login() {
 
   const onFinish = (values) => {
     setLoading(true)
-    axios.post('https://67393b336454d213.mokky.dev/auth', values).then((res) => {
+    axios.post('https://blogsites.pythonanywhere.com/api/auth/login', values).then((res) => {
       if (res.data.token) {
         addToken(res.data.token)
         navigate("/")

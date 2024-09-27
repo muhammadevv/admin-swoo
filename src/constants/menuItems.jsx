@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Building2, House, LayoutDashboard, MapPinHouse, Users } from "lucide-react";
-import FloorPlan from "../assets/icons/FloorPlan";
+import { Cake, LayoutDashboard, MapPinHouse, Users } from "lucide-react";
 export const menuItems = [
   {
     key: '/',
@@ -8,28 +7,24 @@ export const menuItems = [
     label: <Link to={'/'} >Dashboard</Link>,
   },
   {
-    key: '/clients',
+    key: '/users',
     icon: <Users size={16} strokeWidth={1.5} />,
-    label: <Link to={'/clients'} >Mijozlar</Link>,
+    label: <Link to={'/users'} >Users</Link>,
   },
   {
-    key: '/buildings',
-    icon: <Building2 size={16} strokeWidth={1.5} />,
-    label: <Link to={'/buildings'} >Buildings</Link>,
+    key: '/cakes',
+    icon: <Cake size={16} strokeWidth={1.5} />,
+    label: <Link to={'/cakes'} >Cakes</Link>,
   },
   {
-    key: '/locations',
+    key: '/collections',
     icon: <MapPinHouse size={16} strokeWidth={1.5} />,
-    label: <Link to={'/locations'} >Locations</Link>,
+    label: <Link to={'/collections'} >Collections</Link>,
   },
   {
-    key: '/floor',
-    icon: <FloorPlan />,
-    label: <Link to={'/floor'}>Floor</Link>
+    key: '/orders',
+    icon: <MapPinHouse size={16} strokeWidth={1.5} />,
+    label: <Link to={'/orders'} >orders</Link>,
   },
-  {
-    key: '/home',
-    icon: <House size={16} strokeWidth={1.5} />,
-    label: <Link to={'/home'}>Home</Link>
-  }
+
 ]
